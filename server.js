@@ -16,7 +16,7 @@ const server = http.createServer((req,res)=>{
         'eot':'application/vnd.ms-fontobject'
     }
     let urlPath = url.parse(req.url).pathname
-    let trimPath = urlPath.replace(/^\/+|\/+$/, "")
+    let trimPath = urlPath.replace(/^\/+|\/+$/g, "")
     const filesDefences = urlPath.match(/\.js|\.css|\.png|\.svg|\.jpg|\.ttf|\.woff|\.woff2|\.eot/);
     if (filesDefences) {
         const extension = mimeTypes[filesDefences[0].toString().split('.')[1]];
@@ -112,6 +112,16 @@ handle.contact = function (req , res){
         return res.end();
     })
 }
+handle.login = function (req , res){
+    fs.readFile("./public/login.html",'utf-8',(err, data)=>{
+        if(err){
+            console.log(err.message)
+        }
+        res.writeHead(200,{"Content-Type": "text/html"})
+        res.write(data)
+        return res.end();
+    })
+}
 
 
 let router ={
@@ -122,4 +132,5 @@ let router ={
     'edit': handle.edit,
     'delete': handle.delete,
     'contact': handle.contact,
+    'login': handle.login,
 }
