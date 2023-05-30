@@ -140,7 +140,7 @@ function ConfirmPass(){
     console.log(pass)
     console.log(confPass)
     if (pass!== confPass){
-        document.getElementById('Confirm').innerHTML = 'mật khẩu chưa khớp'
+        document.getElementById('Confirm').innerHTML = 'The Confirm password does not match'
     }else {
         document.getElementById('Confirm').innerHTML = ''
 

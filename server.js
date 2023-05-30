@@ -32,7 +32,7 @@ server.listen(4000 , 'localhost',()=>{
 })
 
 handle.notFound = function (req,res){
-    fs.readFile("./public/notfound.html",'utf-8',(err, data)=>{
+    fs.readFile("./src/views/general/notfound.html",'utf-8',(err, data)=>{
         if(err){
             console.log(err.message)
         }
@@ -42,7 +42,7 @@ handle.notFound = function (req,res){
     })
 }
 handle.home = function (req,res){
-    fs.readFile("./public/index.html",'utf-8',(err, data)=>{
+    fs.readFile("./src/views/general/index.html",'utf-8',(err, data)=>{
         if(err){
             console.log(err.message)
         }
@@ -113,8 +113,8 @@ handle.contact = function (req , res){
     })
 }
 handle.login = function (req , res){
-    if (req.method == "GET"){
-        fs.readFile("./public/login.html",'utf-8',(err, data)=>{
+    if (req.method === "GET"){
+        fs.readFile("./src/views/general/login.html",'utf-8',(err, data)=>{
             if(err){
                 console.log(err.message)
             }
@@ -128,8 +128,8 @@ handle.login = function (req , res){
     }
 }
 handle.register = function (req , res){
-    if (req.method == "GET"){
-        fs.readFile("./public/register.html",'utf-8',(err, data)=>{
+    if (req.method === "GET"){
+        fs.readFile("./src/views/general/register.html",'utf-8',(err, data)=>{
             if(err){
                 console.log(err.message)
             }
