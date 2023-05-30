@@ -53,7 +53,7 @@ handle.home = function (req,res){
 }
 handle.about = function (req , res){
 
-    fs.readFile("./public/about.html",'utf-8',(err, data)=>{
+    fs.readFile("./src/views/customer/about.html",'utf-8',(err, data)=>{
         if(err){
             console.log(err.message)
         }
@@ -63,7 +63,7 @@ handle.about = function (req , res){
     })
 }
 handle.course = function (req , res){
-    fs.readFile("./public/course.html",'utf-8',(err, data)=>{
+    fs.readFile("./src/views/customer/course.html",'utf-8',(err, data)=>{
         if(err){
             console.log(err.message)
         }
@@ -103,7 +103,7 @@ handle.delete = function (req , res){
     })
 }
 handle.contact = function (req , res){
-    fs.readFile("./public/contact.html",'utf-8',(err, data)=>{
+    fs.readFile("./src/views/customer/contact.html",'utf-8',(err, data)=>{
         if(err){
             console.log(err.message)
         }
