@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb1a6bb9-ac61-4dd2-99a9-c532dbc284a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notfound.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/notfound.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/general/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/general/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/general/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/general/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1685321354070" duration="2567000" />
       <workItem from="1685329494736" duration="14475000" />
       <workItem from="1685373598050" duration="3067000" />
-      <workItem from="1685416439206" duration="10504000" />
+      <workItem from="1685416439206" duration="16857000" />
     </task>
     <servers />
   </component>
