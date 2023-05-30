@@ -113,14 +113,34 @@ handle.contact = function (req , res){
     })
 }
 handle.login = function (req , res){
-    fs.readFile("./public/login.html",'utf-8',(err, data)=>{
-        if(err){
-            console.log(err.message)
-        }
-        res.writeHead(200,{"Content-Type": "text/html"})
-        res.write(data)
-        return res.end();
-    })
+    if (req.method == "GET"){
+        fs.readFile("./public/login.html",'utf-8',(err, data)=>{
+            if(err){
+                console.log(err.message)
+            }
+            res.writeHead(200,{"Content-Type": "text/html"})
+            res.write(data)
+            return res.end();
+        })
+    }else {
+        res.writeHead(301,{"location": "/course"})
+        res.end()
+    }
+}
+handle.register = function (req , res){
+    if (req.method == "GET"){
+        fs.readFile("./public/register.html",'utf-8',(err, data)=>{
+            if(err){
+                console.log(err.message)
+            }
+            res.writeHead(200,{"Content-Type": "text/html"})
+            res.write(data)
+            return res.end();
+        })
+    }else {
+        res.writeHead(301,{"location": "/login"})
+        res.end()
+    }
 }
 
 
@@ -133,4 +153,5 @@ let router ={
     'delete': handle.delete,
     'contact': handle.contact,
     'login': handle.login,
+    'register': handle.register,
 }

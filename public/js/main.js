@@ -134,4 +134,15 @@
     });
     
 })(jQuery);
+function ConfirmPass(){
+    let pass = document.getElementById('form1Example23').value
+    let confPass = document.getElementById('form1Example2').value
+    console.log(pass)
+    console.log(confPass)
+    if (pass!== confPass){
+        document.getElementById('Confirm').innerHTML = 'mật khẩu chưa khớp'
+    }else {
+        document.getElementById('Confirm').innerHTML = ''
 
+    }
+}

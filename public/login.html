@@ -73,7 +73,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="/home" class="nav-item nav-link active">Home</a>
+                <a href="/home" class="nav-item nav-link ">Home</a>
                 <a href="/about" class="nav-item nav-link">About</a>
                 <a href="/course" class="nav-item nav-link">Courses</a>
                 <div class="nav-item dropdown">
@@ -103,13 +103,14 @@
 <div>
     <section class="vh-100">
         <div class="container py-5 h-100">
+            <h1 class="mt-n2 text-uppercase text-center text-dark><i class="fa fa-book-reader mr-3></i>login</h1>
             <div class="row d-flex align-items-center justify-content-center h-100">
                 <div class="col-md-8 col-lg-7 col-xl-6">
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
                          class="img-fluid" alt="Phone image">
                 </div>
                 <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                    <form>
+                    <form method="post">
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                             <input type="email" id="form1Example13" placeholder="Email address" class="form-control form-control-lg" />
@@ -124,7 +125,7 @@
                                 <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
                                 <label class="form-check-label" for="form1Example3"> Remember me </label>
                             </div>
-                            <a href="#!">Forgot password?</a>
+                            <a href="/register">register</a>
                         </div>
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
